@@ -23,7 +23,7 @@ describe('App component', () => {
     wrapper.find('select').simulate('change', {
       target: {value: sortTypes.COUNT}
     });
-
+    
     expect(wrapper.state('sortType')).toEqual(sortTypes.COUNT);
   });
 });
